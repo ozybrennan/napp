@@ -1,5 +1,6 @@
 Napp::Application.routes.draw do
-  get "users/new"
+  resources :users
+
   root to: 'static_pages#home'
   get "/signup", to: "users#new"
   get '/help', to: 'static_pages#help'
