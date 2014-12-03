@@ -28,5 +28,6 @@ module Napp
     config.generators do |g|
         g.test_framework :rspec
     end
+    config.active_record.whitelist_attributes = true
   end
 end
